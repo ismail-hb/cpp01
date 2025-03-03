@@ -3,14 +3,16 @@
 /*                                                        :::      ::::::::   */
 /*   main.cpp                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ismail <ismail@student.42.fr>              +#+  +:+       +#+        */
+/*   By: ishouche <ishouche@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/03 16:02:57 by ismail            #+#    #+#             */
-/*   Updated: 2025/03/03 16:07:07 by ismail           ###   ########.fr       */
+/*   Updated: 2025/03/03 20:22:13 by ishouche         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "Weapon.hpp"
+#include "HumanA.hpp"
+#include "HumanB.hpp"
 
 int main()
 {

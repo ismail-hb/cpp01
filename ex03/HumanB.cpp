@@ -3,21 +3,23 @@
 /*                                                        :::      ::::::::   */
 /*   HumanB.cpp                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ismail <ismail@student.42.fr>              +#+  +:+       +#+        */
+/*   By: ishouche <ishouche@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/03 18:14:01 by ismail            #+#    #+#             */
-/*   Updated: 2025/03/03 18:36:16 by ismail           ###   ########.fr       */
+/*   Updated: 2025/03/03 20:30:39 by ishouche         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "Weapon.hpp"
+#include "HumanB.hpp"
 
 void HumanB::attack()
 {
 	std::cout << name << " attacks with their " << type << std::endl;
 }
 
-void HumanB::setWeapon(Weapon type)
+void HumanB::setWeapon(Weapon& type)
 {
-	this->type = type.getType();
+	this->type = &type;
+	this->type->getType();
 }
