@@ -3,10 +3,10 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: ishouche <ishouche@student.42.fr>          +#+  +:+       +#+         #
+#    By: ismail <ismail@student.42.fr>              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/03/03 20:02:39 by ishouche          #+#    #+#              #
-#    Updated: 2025/03/03 20:07:26 by ishouche         ###   ########.fr        #
+#    Updated: 2025/03/04 07:59:05 by ismail           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -15,13 +15,12 @@ DEBUG	=	0
 NAME	=	violence
 
 INC_DIR	=	inc
-SRC_DIR	=	./
 OBJ_DIR	=	obj
-HEADERS = HumanA.hpp HumanB.hpp Weapon.hpp
+# HEADERS = HumanA.hpp HumanB.hpp Weapon.hpp
 
 SRC	=	$(addprefix $(SRC_DIR)/, HumanA.cpp main.cpp HumanB.cpp Weapon.cpp)
 
-OBJ	=	$(SRC:$(SRC_DIR)/%.cpp=$(OBJ_DIR)/%.o)
+OBJ	=	$(SRC:%.cpp=$(OBJ_DIR)/%.o)
 
 CXX			=	c++
 CXXFLAGS	=	-Wall -Wextra -Werror -std=c++98
